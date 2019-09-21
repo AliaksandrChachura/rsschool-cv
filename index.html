@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Aliaksandr Chachura Resume</title>
+</head>
+<body>
+<div>
+    <div><img src="assets/Field.jpg" alt="Письма мастера дзен" class="image"></div>
+<div class="div-flex"><h2>1. Name</h2>
+<p>Aliaksandr Chachura</p></div>
+
+<div class="div-flex"><h2>2. Contacts</h2>
+<p>Email: skif198560@gmail.com</p>
+<p>Tel.: +375-29-361-30-98</p></div>
+
+<div class="div-flex"><h2>3. Summary</h2>
+<p>The main purpose become a good specialist in Front-end developing. I would like to take more skills in this direction. Although I haven't enaugh experience in programming, I'  m ready to study all the time to improve my skills.</p>
+     <p>In the beginning of 2019 year I studied in RSSchool, but unfortuantly I couldn't graduated from it, my training lasted only 1,5 stages. And now I'm trying to complete this education.</p></div>
+
+<div class="div-flex"><h2>4. Skills</h2>
+<p>Good level of Java Script, can build an enviroment for application, know such tools as WebSocket, WebPack. Can work using Git. Have knowledge of HTML and CSS.</p></div>
+
+<div class="div-flex"><h2>5.Code examples</h2>
+    <ul>
+        <li>
+            <p>solve of Sudoku</p>
+            <p>function solveSudoku(matrix) {</p>
+                    <p>&nbsp &nbsp if (solve(matrix) === true)</p>
+                        <p>&nbsp &nbsp &nbsp &nbsp return matrix;</p>
+                }
+            
+                <p>function solve(matrix) {</p>
+                    <p>&nbsp &nbsp let b;</p>
+                    <p>&nbsp &nbsp for (let i = 0; i <= 8; i++) {</p>
+                        <p>&nbsp &nbsp &nbsp &nbsp for (let j = 0; j <= 8; j++) {</p>
+                            <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp if (matrix[i][j] !== 0) {</p>
+                                <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp continue;</p>
+                                <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp }</p>
+                                <p>&nbsp &nbsp &nbsp &nbsp for (let k = 1; k <= 9; k++) {</p>
+                                    <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  if (insert(matrix, i, j, k) === true) {</p>
+                                        <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp matrix[i][j] = k;</p>
+                                        <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp b = solve(matrix);</p>
+                                        <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp if (b === true) {</p>
+                                            <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp return true;</p>
+                                            <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp }</p>
+                                            <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp matrix[i][j] = 0;</p>
+                                            <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  }</p>
+                                            <p>&nbsp &nbsp &nbsp &nbsp }</p>
+                                            <p>&nbsp &nbsp &nbsp &nbsp return false;</p>
+                                            <p>&nbsp &nbsp }</p>
+                    <p>}</p>
+            
+                    <p>return true;</p>
+            
+                <p>}</p>
+            
+                <p>function insert(matrix, i, j, k) {</p>
+                    <p>&nbsp &nbsp for (let a = 0; a <= 8; a++) {</p>
+                        <p>&nbsp &nbsp &nbsp &nbsp if ((a !== i && matrix[a][j] === k) || (a !== j && matrix[i][a] === k)) {</p>
+                            <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  return false;</p>
+                            <p>&nbsp &nbsp &nbsp &nbsp }</p>
+                            <p>&nbsp &nbsp }</p>
+                            <p>&nbsp &nbsp let y = Math.floor((i / 3)) * 3;</p>
+                            <p>&nbsp &nbsp let x = Math.floor((j / 3)) * 3;</p>
+                            <p>&nbsp &nbsp for (let a = 0; a < 3; a++) {</p>
+                                <p>&nbsp &nbsp &nbsp &nbsp for (let b = 0; b < 3; b++) {</p>
+                                    <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp if (a !== i && b !== j && matrix[y + a][x + b] === k) {</p>
+                                return false;</p>
+                                <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp }</p>
+                                <p>&nbsp &nbsp &nbsp &nbsp }</p>
+                                <p>&nbsp &nbsp }</p>
+                                <p>&nbsp &nbsp return true;</p>
+            
+            
+            <p>}</p>
+        </li>
+        <li><a href="https://github.com/AliaksandrChachura/hexal">Link to сode of site design using HTML model is made in terms of CSS framework.</a></li>
+    </ul>
+</div>
+
+<div class="div-flex"><h2>6. Education</h2>
+<ol>
+    <li>Studied C in 2010 in BELHARD;</li>
+    <li>Studied PHP in 2010 in BELHARD;</li>
+    <li>Studied VBA Excel in 2017 in Courcera.</li>
+</ol></div>
+<div class="div-flex"><h2>7. English</h2>
+<p>Intermediate, sometimes use english in my job. Also use english to search information in internet.</p>
+</div>
+</div>
+</body>
+</html>
