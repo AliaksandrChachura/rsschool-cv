@@ -74,3 +74,5 @@
 1. Studied PHP in 2010 in BELHARD;
 1. Studied VBA Excel in 2017 in Courcera.
 
+# 6.English
+### Intermediate, sometimes use english in my job. Also use english to search information in internet.
