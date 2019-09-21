@@ -68,3 +68,9 @@
 ```
 * Link to сode of site design using HTML model is made in terms of CSS framework.
 [GitHub](https://github.com/AliaksandrChachura/hexal)
+
+# 7.Education
+1. Studied C in 2010 in BELHARD;
+1. Studied PHP in 2010 in BELHARD;
+1. Studied VBA Excel in 2017 in Courcera.
+
